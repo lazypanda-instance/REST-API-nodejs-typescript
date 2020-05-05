@@ -7,6 +7,5 @@
 # Getting started
 1. ```npm install```
 2. ```npm run dev```
-# nodejs-with-typescript
-# nodejs-with-typescript
+
 # REST-API-nodejs-typescript
