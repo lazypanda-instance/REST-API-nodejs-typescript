@@ -1,0 +1,38 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0"
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "schemes": ["http"],
+  "produces": ["application/json"],
+  "paths": {
+    "/profile": {
+      "get": {
+        "tags": ["Fetch Profile"],
+        "summary": "Fetch login user profile",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        },
+        "content": {
+          "application/json": {}
+        },
+        "parameters": [
+          {
+            "name": "name",
+            "in": "query",
+            "description": "Specifies the query string as name",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  }
+}
