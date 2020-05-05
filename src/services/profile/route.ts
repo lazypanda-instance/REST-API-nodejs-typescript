@@ -9,9 +9,9 @@ export default [
         method: "get",
         handler: [
             checkProfileParams,
-            (req: Request, res: Response) => {
+            async (req: Request, res: Response) => {
                 const userProfile = new ProfileController(req);
-                const result = userProfile.getUserProfile();
+                const result = await userProfile.getUserProfile();
                 res.status(200).send(result);
             }
         ]
